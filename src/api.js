@@ -27,10 +27,10 @@ const fanOut = (input, cb) => {
  funnel - return a result after applying an accumulation function to
           each item in the collection. Funneling down to a single result.
 
- ARGS:    input - input collection
-          fn - function to apply to each item in the collection with
+ ARGS:  input - input collection
+        fn - function to apply to each item in the collection with
                args accumulation value and current value
-               startValue - start the accumulation with this value
+        startValue - start the accumulation with this value
 
  EX:  - funnel([1, 2, 3], add, 0) -->  6;
       - funnel([1, 2], add, 1) --> 4
@@ -43,7 +43,7 @@ const fanOut = (input, cb) => {
 
 const funnel = (input, fn, startValue) => {
     // TODO: your implementation here.
-      return 0;
+      return false;
 };
 
 /*
@@ -67,7 +67,7 @@ const funnel = (input, fn, startValue) => {
 
 const distill = (input, fn) => {
     // TODO: your implementation here.
-    return [];
+    return false;
 };
 
 /*
