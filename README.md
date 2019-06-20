@@ -14,3 +14,5 @@ ___
 #### CORE DEPENDENCIES
 + [Yarn](https://yarnpkg.com)
 + [Jest](https://jestjs.io/)
+
+solutions available on ```solutions``` branch
