@@ -1,0 +1,11 @@
+{
+  "presets": [
+    ["@babel/preset-env", { "useBuiltIns": "entry" }],
+    ["@babel/preset-react"],
+],
+  "plugins":[
+      ["transform-es2015-spread"],
+      ["@babel/plugin-proposal-decorators", { "legacy": true }],
+      ["@babel/plugin-proposal-class-properties", { "loose": true }]
+  ]
+}
