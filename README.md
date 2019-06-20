@@ -1,5 +1,5 @@
 # The front end breakfast challenge
----
+
 ##### 🚀 Your Mission
 ##### ```FORK THIS REPO, THEN CLONE```
 #### Objective 1: Follow the steps below to get the project running locally. You should see 14 tests fail.
@@ -10,8 +10,7 @@ ___
 + ### ```yarn install```
 + ### ```yarn test```
 ___
+# 🍀 Good Luck
 #### CORE DEPENDENCIES
 + [Yarn](https://yarnpkg.com)
 + [Jest](https://jestjs.io/)
-___
-# 🍀 Good Luck
