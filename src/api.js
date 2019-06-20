@@ -17,13 +17,8 @@
 */
 
 const fanOut = (input, cb) => {
-    const output = [];
     // TODO: your implementation here.
-    for (var i = 0; i < input.length; i++) {
-        output.push(cb(input[i]));
-    }
-
-    return output;
+    return [];
 };
 
 /*
@@ -48,11 +43,8 @@ const fanOut = (input, cb) => {
 
 const funnel = (input, fn, startValue) => {
     // TODO: your implementation here.
-    for(var i = 0; i < input.length; i++) {
-        var output = startValue += input[i];
-      }
-      return output;
-}
+      return 0;
+};
 
 /*
  STEP 3:  Implement distill. Glad you made it here... Are you feeling the same?
@@ -74,19 +66,14 @@ const funnel = (input, fn, startValue) => {
  */
 
 const distill = (input, fn) => {
-    const output = [];
     // TODO: your implementation here.
-    for (var i = 0; i < input.length; i++) {
-        const pred = fn(input[i]);
-        if (pred) output.push(input[i]);
-    }
-    return output;
-}
+    return [];
+};
 
 /*
-STEP 4: Implement numOfChars.
+STEP 4: Implement numberOfCharacters.
 
-numOfChars - return the number of characters in the input array of strings
+numberOfCharacters - return the number of characters in the input array of strings
 
 ARGS: input - input collection of strings (words)
 
@@ -101,19 +88,13 @@ CAVEATS:
 
 const numberOfCharacters = (input) => {
     // TODO: your implementation here.
-    const output = [];
-    for (var i = 0; i < input.length; i++) {
-        const stringer = input[i];
-        output.push(...stringer);
-    }
-    return output.length;
-}
-
+    return 0;
+};
 
 /*
- STEP 5: Implement numOfCertainChars.
+ STEP 5: Implement numberOfSpecialCharacters.
 
- numOfCertainChars - return the number of c characters in the input array of strings
+ numberOfSpecialCharacters - return the number of c characters in the input array of strings
 
  ARGS: input - input collection of strings (words)
        c - the certain character to count
@@ -129,14 +110,7 @@ const numberOfCharacters = (input) => {
 
 const numberOfSpecialCharacters = (input, c) => {
     // TODO: your implementation here.
-    const output = [];
-    for (var i = 0; i < input.length; i++) {
-        const spreader = [...input[i]];
-        for (var j = 0; j < spreader.length; j++) {
-            if (spreader[j] === c) output.push(spreader[j]);
-        }
-    }
-    return output.length;
-}
+    return 0;
+};
 
 export { fanOut, funnel, distill, numberOfCharacters, numberOfSpecialCharacters };
