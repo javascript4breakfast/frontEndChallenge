@@ -113,4 +113,11 @@ const numberOfSpecialCharacters = (input, c) => {
     return 0;
 };
 
-export { fanOut, funnel, distill, numberOfCharacters, numberOfSpecialCharacters };
+// EXTREME STRETCH
+// STEP 6: Implement mapObjectsByProp
+
+const groupObjectsByProp = (objectArray, prop) => {
+    return {};
+};
+
+export { distill, fanOut, funnel, groupObjectsByProp, numberOfCharacters, numberOfSpecialCharacters };
