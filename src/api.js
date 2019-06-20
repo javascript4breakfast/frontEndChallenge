@@ -39,4 +39,13 @@ const numberOfSpecialCharacters = (input, c) => {
     return output.length;
 };
 
-export { fanOut, funnel, distill, numberOfCharacters, numberOfSpecialCharacters };
+const groupObjectsByProp = (objectArray, prop) => {
+    return objectArray.reduce((acc, obj) => {
+        const key = obj[prop];
+        if (!acc[key]) acc[key] = [];
+        acc[key].push(obj);
+        return acc;
+    }, {});
+};
+
+export { distill, fanOut, funnel, groupObjectsByProp, numberOfCharacters, numberOfSpecialCharacters };

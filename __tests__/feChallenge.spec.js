@@ -2,7 +2,7 @@ import * as api from '../src/api';
 import { dataArrs } from '../testData';
 import { config } from '../config';
 
-const {moreNumbers, oneNumber, poem, simpleNumbers, splitArr} = dataArrs;
+const {mappedObjArray, moreNumbers, objArr, oneNumber, poem, simpleNumbers, splitArr} = dataArrs;
 const {addIt, combineIt, splitIt, squareIt, isEven, isOdd, containsA} = config;
 
 describe('The JavaScript 4 Breakfast Coding Challenge', () => {
@@ -77,9 +77,16 @@ describe('The JavaScript 4 Breakfast Coding Challenge', () => {
     });
 
     describe('🔮 NumberOfSpecialCharacters', () => {
-        test('In a given poem', () => {
-            var result = api.numberOfSpecialCharacters(poem, 'A');
+        test('Countes the number of certain characters in a given poem', () => {
+            const result = api.numberOfSpecialCharacters(poem, 'A');
             expect(result).toEqual(2);
+        });
+    });
+
+    describe('🎰 GroupObjectsByProp', () => {
+        test('Maps object by prop from data array', () => {
+            const result = api.groupObjectsByProp(objArr, 'year');
+            expect(result).toEqual(mappedObjArray);
         });
     });
 
