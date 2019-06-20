@@ -118,6 +118,10 @@ const numberOfSpecialCharacters = (input, c) => {
 // ARGS:  collection: an array of objects
 //        prop: a string refrencing the prop
 //
+// CAVEATS:
+// -- no external libraries or function calls
+// -- you may only use .push and .reduce
+//
 // EXAMPLE: const data = [{id: 4, name: 'bob'}, {id: 1, name: 'sue'}, {id: 6, name: 'sue'}];
 // groupObjectsByProp(data, 'name');
 // => { bob: [ { id: 4, name: 'bob' } ], sue: [ { id: 1, name: 'sue' }, { id: 6, name: 'sue' } ] }
