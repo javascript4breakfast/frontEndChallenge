@@ -42,6 +42,11 @@ describe('The JavaScript 4 Breakfast Coding Challenge', () => {
             var result = api.funnel(poem, combineIt, '');
             expect(result).toEqual('AdobeMakeItAnExperience')
         });
+        it('Prevents insanity', () => {
+            const addNumbers = (tot, num) => tot + num;
+            const result = api.funnel([1,2,3], addNumbers, 94);
+            expect(result).toEqual(100);
+        });
     });
 
     describe('🚰 Distill', () => {
