@@ -114,9 +114,15 @@ const numberOfSpecialCharacters = (input, c) => {
 };
 
 // EXTREME STRETCH
-// STEP 6: Implement mapObjectsByProp
+// STEP 6: Implement groupObjectsByProp
+// ARGS:  collection: an array of objects
+//        prop: a string refrencing the prop
+//
+// EXAMPLE: const data = [{id: 4, name: 'bob'}, {id: 1, name: 'sue'}, {id: 6, name: 'sue'}];
+// groupObjectsByProp(data, 'name');
+// => { bob: [ { id: 4, name: 'bob' } ], sue: [ { id: 1, name: 'sue' }, { id: 6, name: 'sue' } ] }
 
-const groupObjectsByProp = (objectArray, prop) => {
+const groupObjectsByProp = (collection, prop) => {
     return {};
 };
 
