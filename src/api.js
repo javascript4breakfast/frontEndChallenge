@@ -28,9 +28,9 @@ const numberOfCharacters = (input) => {
 
 const numberOfSpecialCharacters = (input, c) => {
     const output = [];
-    const result = fanOut(input, (x) => {
-        const pen = distill(x, (i) => {
-            if (i === c) output.push(i);
+    distill(input, (x) => {
+        fanOut(x, (i) => {
+            if (c === i) output.push(i);
         });
     });
     return output.length;
