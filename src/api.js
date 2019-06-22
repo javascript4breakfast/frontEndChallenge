@@ -23,10 +23,7 @@ const distill = (input, fn) => {
 };
 
 const numberOfCharacters = (input) => {
-    const result = funnel(input, (x) => {
-        return x;
-    }, '');
-    return result.length;
+    return funnel(input, x => x, '').length;
 };
 
 const numberOfSpecialCharacters = (input, c) => {

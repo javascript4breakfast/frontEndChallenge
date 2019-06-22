@@ -18,7 +18,7 @@ const dataArrs = {
       { make: 'audi', year: 2019 },
       { make: 'ford', year: 2018 },
   ],
-  mappedObjArray: {"2011": [{"make": "benz", "year": 2011}, {"make": "audi", "year": 2011}], "2012": [{"make": "audi", "year": 2012}], "2018": [{"make": "benz", "year": 2018}, {"make": "ford", "year": 2018}], "2019": [{"make": "audi", "year": 2019}]},
+  mappedObjArray: {'2011': [{'make': 'benz', 'year': 2011}, {'make': 'audi', 'year': 2011}], '2012': [{'make': 'audi', 'year': 2012}], '2018': [{'make': 'benz', 'year': 2018}, {'make': 'ford', 'year': 2018}], '2019': [{'make': 'audi', 'year': 2019}]},
 }
 
 export { dataArrs };
