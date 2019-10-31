@@ -1,5 +1,8 @@
 /* PLEASE READ EACH STEP CAREFULLY INCLUDING CAVEATS--->
 
+
+blah blah blah
+
   STEP 1:  Implement fanOut.
 
   fanOut - return a new collection of results after applying the
@@ -16,7 +19,7 @@
     - You may not use any external libraries
 */
 
-const fanOut = (input, cb) => {
+const fanOut = (input, cb) => { hfhfhfhffbfbf
     // TODO: your implementation here.
     return [];
 };
