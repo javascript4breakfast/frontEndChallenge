@@ -18,7 +18,11 @@
 
 const fanOut = (input, cb) => {
     // TODO: your implementation here.
-    return [];
+    const output = [];
+    for (let i = 0; i < input.length; i++) {
+        output.push(cb(input[i]));
+    }
+    return output;
 };
 
 /*
@@ -43,7 +47,10 @@ const fanOut = (input, cb) => {
 
 const funnel = (input, fn, startValue) => {
     // TODO: your implementation here.
-      return false;
+    for (let i = 0; i < input.length; i ++) {
+        var output = startValue += input[i];
+    }
+    return output;
 };
 
 /*
@@ -67,7 +74,11 @@ const funnel = (input, fn, startValue) => {
 
 const distill = (input, fn) => {
     // TODO: your implementation here.
-    return false;
+    const output = [];
+    for (let i = 0; i < input.length; i ++) {
+        if (fn(input[i])) output.push(input[i]);
+    }
+    return output;
 };
 
 /*
@@ -88,7 +99,7 @@ CAVEATS:
 
 const numberOfCharacters = (input) => {
     // TODO: your implementation here.
-    return 0;
+    return funnel(input, x => x, '').length;
 };
 
 /*
@@ -110,7 +121,13 @@ const numberOfCharacters = (input) => {
 
 const numberOfSpecialCharacters = (input, c) => {
     // TODO: your implementation here.
-    return 0;
+    const output = [];
+    distill(input, (x) => {
+        fanOut(x, (i) => {
+            if (c === i) output.push(i);
+        });
+    });
+    return output.length;
 };
 
 // EXTREME STRETCH
@@ -127,7 +144,12 @@ const numberOfSpecialCharacters = (input, c) => {
 // => { bob: [ { id: 4, name: 'bob' } ], sue: [ { id: 1, name: 'sue' }, { id: 6, name: 'sue' } ] }
 
 const groupObjectsByProp = (collection, prop) => {
-    return {};
+    return collection.reduce((acc, obj) => {
+        const key = obj[prop];
+        if (!acc[key]) acc[key] = [];
+        acc[key].push(obj);
+        return acc;
+    }, {});
 };
 
 export { distill, fanOut, funnel, groupObjectsByProp, numberOfCharacters, numberOfSpecialCharacters };
